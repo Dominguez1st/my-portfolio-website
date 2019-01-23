@@ -8,14 +8,14 @@
 		<div class="pag">
 			<h1>Purpose, Audience, and Goal</h1>
 			<ul>
-				<li><strong>Purpose: </strong>This project will be a professional portfolio website with which to demo my
-					full stack development skills</li>
-				<li><strong>Audience: </strong>This site is designed with a professional audience in mind, and is made to
-				target individuals within the web development community. Target audience to include: hiring managers,
-				recruiters, and peers</li>
+				<li><strong>Purpose: </strong>This project is to be a professional portfolio website with which to demonstrate
+					my full stack development skills</li>
+				<li><strong>Audience: </strong>This site is to be designed for a professional audience, and is made to
+					target individuals within the web development community. Target audience to include: hiring managers,
+					recruiters, and peers</li>
 				<li><strong>Goal: </strong>The primary goal of this site is for users of the site initiate contact with me
-					in regards to employment. The secondary goal of this site is to showcase my work, and to contribute to a
-				polished professional online presence.</li>
+					in regards to employment. The secondary goal of this site is to showcase my full stack development skills,
+					and to contribute to a polished professional online presence.</li>
 			</ul>
 		</div>
 		<div class="persona">
