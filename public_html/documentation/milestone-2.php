@@ -25,9 +25,10 @@
 			</p>
 			<p>
 				<strong>Portfolio: </strong>I want this to be an responsive gallery containing 2-4 programming projects that
-				I am the most confident in. To the left and right of each project will be an options to allow the user to
-				switch to another project. Under the projects will be text that changes with each project. The text will
-				detail all technologies that I used, languages that made up the project, and challenges and hurdles that I
+				I am the most confident in that I did in University and perhaps any new ones I might do during the course of
+				the boot camp. To the left and right of each project will be an options to allow the user to switch to
+				another project. Under the projects will be text that changes with each project. The text will detail all
+				technologies that I used, languages that made up the project, and challenges and hurdles that I
 				overcame to complete the project.
 			</p>
 			<p>
