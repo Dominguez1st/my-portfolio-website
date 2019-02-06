@@ -39,7 +39,8 @@
 				This site will feature one layout that will be fully responsive on small and large screens. These wireframes
 				were created using https://mockflow.com.
 			</p>
-			<img src="wireframe-desktop.png" alt="desktop wireframe">
+			<h2>Desktop Wireframe</h2>
+			<img src="Page_1.png" alt="desktop wireframe">
 		</div>
 	</body>
 </html>
