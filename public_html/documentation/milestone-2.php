@@ -8,8 +8,9 @@
 		<div class="Content Strategy">
 			<h1>Content Strategy</h1>
 			<p>
-				My site will be multiple pages, it will have one main page and links to other pages that will host whatever
-				projects that I will want to host on the site. The main page will consist of the following sections:
+				My site will be one page. The one main page will offer information about me, a selection of programming
+				projects that I will want to host on the site, and a form to allow people to contact me. The main page will
+				consist of the following sections:
 			</p>
 			<p>
 				<strong>Welcome: </strong>A brief one-line introduction that clearly states my name and role as a Fullstack
@@ -23,14 +24,16 @@
 				that I am a good personality fit for.
 			</p>
 			<p>
-				<strong>Portfolio: </strong>I want this to be an animated, responsive image gallery containing 4-6 examples
-				of my best work. Gallery pop-up will include my role and contributions to each project, with iconography to
-				represent the technology used.
+				<strong>Portfolio: </strong>I want this to be an responsive gallery containing 2-4 programming projects that
+				I am the most confident in. To the left and right of each project will be an option to allow the user to
+				switch to another project. Under the projects will be text that changes with each project. The text will
+				detail all technologies that I used, languages that made up the project, and challenges and hurdles that I
+				overcame to complete the project.
 			</p>
 			<p>
 				<strong>Contact: </strong>This section will contain a simple contact form, my professional email address,
-				and additional links to my professional social media profiles: LinkedIn, Twitter, GitHub, Dribbble. (These
-				will also be linked to in the footer site wide via icons.)
+				and additional links to my professional social media profiles: LinkedIn, GitHub. (These will also be linked
+				to in the footer site wide via icons.)
 			</p>
 		</div>
 		<div class="wireframe">
@@ -41,6 +44,9 @@
 			</p>
 			<h2>Desktop Wireframe</h2>
 			<img src="Page_1.png" alt="desktop wireframe">
+			<h2>Mobile Wireframe</h2>
+			<img src="Page_2.png" alt="mobile wireframe 1">
+			<img src="Page_3.png" alt="mobile wirefram 2">
 		</div>
 	</body>
 </html>
