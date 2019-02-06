@@ -43,10 +43,10 @@
 				were created using https://mockflow.com.
 			</p>
 			<h2>Desktop Wireframe</h2>
-			<img src="Page_1.png" alt="desktop wireframe">
+			<img src="images/Page_1.png" alt="desktop wireframe">
 			<h2>Mobile Wireframes</h2>
-			<img src="Page_2.png" alt="mobile wireframe 1">
-			<img src="Page_3.png" alt="mobile wireframe 2">
+			<img src="images/Page_2.png" alt="mobile wireframe 1">
+			<img src="images/Page_3.png" alt="mobile wireframe 2">
 		</div>
 	</body>
 </html>
