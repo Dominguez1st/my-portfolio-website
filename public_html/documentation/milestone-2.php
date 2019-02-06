@@ -17,15 +17,15 @@
 				Developer.
 			</p>
 			<p>
-				<strong>About Me: </strong>This section will detail my professional history, core skill set, and professional
-				highlights. This section will showcase my strengths and personality. I will feature a contrasting sidebar
-				that lists my core skills and programming languages which will be easily readable at a glance. The tone of
-				voice will be personable and casual, as I am only interested in opportunities with individuals and organizations
-				that I am a good personality fit for.
+				<strong>About Me: </strong>This section will detail my professional history, skills, education, and professional
+				highlights. This section will show what I am good at and my personality. I will feature a image that lists
+				my skills and programming languages that I am familiar with, purpose of which is to be readable at a glance.
+				The tone will be voice will be professional with a hint of casualness, as I am mainly interested in job
+				opportunities with individuals and organizations to expand my career.
 			</p>
 			<p>
 				<strong>Portfolio: </strong>I want this to be an responsive gallery containing 2-4 programming projects that
-				I am the most confident in. To the left and right of each project will be an option to allow the user to
+				I am the most confident in. To the left and right of each project will be an options to allow the user to
 				switch to another project. Under the projects will be text that changes with each project. The text will
 				detail all technologies that I used, languages that made up the project, and challenges and hurdles that I
 				overcame to complete the project.
@@ -44,9 +44,9 @@
 			</p>
 			<h2>Desktop Wireframe</h2>
 			<img src="Page_1.png" alt="desktop wireframe">
-			<h2>Mobile Wireframe</h2>
+			<h2>Mobile Wireframes</h2>
 			<img src="Page_2.png" alt="mobile wireframe 1">
-			<img src="Page_3.png" alt="mobile wirefram 2">
+			<img src="Page_3.png" alt="mobile wireframe 2">
 		</div>
 	</body>
 </html>
