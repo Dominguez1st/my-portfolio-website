@@ -1,66 +1,95 @@
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 /********************
--------MOBILE-------
+-------DESKTOP-------
 ********************/
+html,body{
+	margin: 0;
+}
 body {
+position: relative;
+}
+.page {
+	min-height: 100vh;
+	padding-top: 2.5em;
 
 }
 
 /***************
----MOBILE-NAV---
+--DESKTOP-NAV--
 ***************/
-.nav {
-
+nav {
+	background-color: lightgray;
+	margin: 0 2%;
+	padding: 1em .5em;
+	border-radius: .25em;
+	position: fixed;
+	width: 96%;
+	top: 0;
+	box-sizing: border-box;
+}
+nav a {
+	color: black;
+	padding-right: 1em;
+	text-decoration: none;
+}
+nav a+a {
+	padding-left: 1em;
+	border-left:1px solid black;
 }
 
 /***************
---MOBILE-INTRO--
+-DESKTOP-INTRO-
 ***************/
 .intro {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white ;
+}
+.intro-text p {
 	text-align: center;
 }
 
 /***************
--MOBILE-ABOUT_ME-
+DESKTOP-ABOUT_ME
 ****************/
 .about-me {
+	background-color: linen;
 
 }
-.about-me > img{
-	width: 50%;
-	display: block;
-	margin: 0 auto;
+.about-me-container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.about-me-text{
+	width: 65%;
+	float: left;
+}
+.portrait{
+	width: 25%;
+	height: auto;
+	float: right;
 }
 
 /***************
-MOBILE-PORTFOLIO
+DESKTOP-PORTFOLIO
 ***************/
 .portfolio{
+	background-color: white;
 
 }
 
 /***************
-MOBILE-CONTACT-ME
+DESKTOP-CONTACT-ME
 ***************/
 .contact-me{
+	background-color: linen;
 
 }
 
 
 /***************
---MOBILE-FOOTER--
+--DESKTOP-FOOTER--
 ***************/
 footer{
 
@@ -68,53 +97,71 @@ footer{
 
 
 /********************
--------DESKTOP-------
+-------MOBILE-------
 ********************/
-@media screen and (min-width:768px) {
+@media screen and (max-width:768px) {
 	body {
 
 	}
 
 	/***************
-	------NAV------
+	---MOBILE-NAV---
 	***************/
-	.nav{
-
+	nav{
+		display: flex;
+	}
+	nav a {
+		flex-grow: 1;
+		text-align: center;
+		padding-right: .5em;
+	}
+	nav a+a {
+		padding-left: .5em;
 	}
 
 	/***************
-	-----INTRO-----
+	--MOBILE-INTRO--
 	***************/
 	.intro {
 
 	}
 
 	/***************
-	----ABOUT_ME----
+	-MOBILE-ABOUT_ME-
 	****************/
 	.about-me {
 
 	}
-	.about-me > img{
-		width: 25%;
+	.about-me-text{
+		float: none;
+		width: 100%;
+		padding: 0 1em;
+		box-sizing: border-box;
+	}
+	.portrait{
+		width: 60%;
+		height: auto;
+		float: none;
+		display: block;
+		margin: auto;
 	}
 
 	/***************
-	---PORTFOLIO---
+	-MOBILE-PORTFOLIO-
 	***************/
 	.portfolio{
 
 	}
 
 	/***************
-	---CONTACT-ME---
+	MOBILE-CONTACT-ME
 	***************/
 	.contact-me{
 
 	}
 
 	/***************
-	-----FOOTER-----
+	--MOBILE-FOOTER--
 	***************/
 	footer{
 

@@ -2,38 +2,51 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Robert Dominguez</title>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<nav>
-			<span>Home About Me Portfolio Contact</span>
+			<a href="#intro"> Home </a>
+			<a href="#about-me"> About Me </a>
+			<a href="#portfolio"> Portfolio </a>
+			<a href="#contact-me"> Contact </a>
 		</nav>
-		<div class="intro">
-			<h1>Robert Dominguez</h1>
-			<p> Fullstack Web Developer</p>
+		<div id ="intro" class="page intro">
+			<div class="intro-text">
+				<h1>Robert Dominguez</h1>
+				<p> Fullstack Web Developer</p>
+			</div>
 		</div>
-		<div class="about-me">
+		<div id="about-me" class="page about-me">
 			<h1>About Me</h1>
-			<p>
-				These are the voyages of the Starship Enterprise. Its continuing mission, to explore strange new worlds, to
-				seek out new life and new civilizations, to boldly go where no one has gone before. We need to neutralize
-				the homing signal. Each unit has total environmental control, gravity, temperature, atmosphere, light, in a
-				protective field. Sensors show energy readings in your area. We had a forced chamber explosion in the
-				resonator coil. Field strength has increased by 3,000 percent.
-			</p>
-			<p>
-				Sensors indicate no shuttle or other ships in this sector. According to coordinates, we have travelled 7,000
-				light years and are located near the system J-25. Tractor beam released, sir. Force field maintaining our
-				hull integrity. Damage report? Sections 27, 28 and 29 on decks four, five and six destroyed. Without our
-				shields, at this range it is probable a photon detonation could destroy the Enterprise.
-			</p>
-			<img src="documentation/images/robert-dominguez.jpg" alt="Robert Dominguez">
+			<div class="about-me-container">
+				<img src="documentation/images/robert-dominguez.jpg" alt="Robert Dominguez" class="portrait">
+				<div class="about-me-text">
+					<p>
+						These are the voyages of the Starship Enterprise. Its continuing mission, to explore strange new worlds, to
+						seek out new life and new civilizations, to boldly go where no one has gone before. We need to neutralize
+						the homing signal. Each unit has total environmental control, gravity, temperature, atmosphere, light, in a
+						protective field. Sensors show energy readings in your area. We had a forced chamber explosion in the
+						resonator coil. Field strength has increased by 3,000 percent.
+					</p>
+					<p>
+						Sensors indicate no shuttle or other ships in this sector. According to coordinates, we have travelled 7,000
+						light years and are located near the system J-25. Tractor beam released, sir. Force field maintaining our
+						hull integrity. Damage report? Sections 27, 28 and 29 on decks four, five and six destroyed. Without our
+						shields, at this range it is probable a photon detonation could destroy the Enterprise.
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="portfolio">
+		<div id="portfolio" class="page portfolio">
 			<h1>Portfolio</h1>
+			<div>
+				<span>test</span>
+			</div>
 		</div>
-		<div class="contact-me">
+		<div id="contact-me" class="page contact-me">
 			<h1>Contact Me</h1>
 			<form >
 				<div>
