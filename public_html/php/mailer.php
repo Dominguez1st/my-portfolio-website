@@ -13,7 +13,7 @@ require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
 require_once("mail-config.php");
 
 use \SendGrid\Mail;
-$sendgrid = new \SendGrid($sendGridSecret);
+$sendgrid = new \SendGrid($smtpSecret);
 // verify user's reCAPTCHA input
 $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 $resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
@@ -27,12 +27,11 @@ try {
 	 * This assumes jQuery (NOT Angular!) will be AJAX submitting the form,
 	 * so we're using the $_POST superglobal.
 	 **/
-	$name = filter_input(INPUT_POST, "demoName", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$email = filter_input(INPUT_POST, "demoEmail", FILTER_SANITIZE_EMAIL);
-	$subject = filter_input(INPUT_POST, "demoSubject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$message = filter_input(INPUT_POST, "demoMessage", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$name = filter_input(INPUT_POST, "user_name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$email = filter_input(INPUT_POST, "user_mail", FILTER_SANITIZE_EMAIL);
+	$message = filter_input(INPUT_POST, "user_message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	// create SendGrid object
-	$emailObject = new Mail();
+	$emailObject = new \SendGrid\Mail\Mail();
 	/**
 	 * Attach the sender to the message.
 	 * This takes the form of an associative array where $email is the key for the real name.
@@ -45,7 +44,7 @@ try {
 	$recipients = $MAIL_RECIPIENTS;
 	$emailObject->addTo($recipients[0], $recipients[1]);
 	// attach the subject line to the message
-	$emailObject->setSubject($subject);
+	//$emailObject->setSubject($subject);
 	/**
 	 * Attach the actual content for the email.
 	 **/

@@ -14,7 +14,7 @@ $(document).ready(function(){
 	 **/
 
 	/* begin validate function here */
-	$("#my-contact-form").validate(
+	$("#contact-form").validate(
 		{
 		// setup handling of form errors
 		debug: true,
@@ -22,44 +22,37 @@ $(document).ready(function(){
 		errorLabelContainer: "#output-area",
 		errorElement: "div",
 		rules: {
-			demoName: {
+			user_name: {
 				required: true
 			},
-			email: {
+			user_mail: {
 				email: true,
 				required: true
 			},
-			message: {
+			user_message: {
 				required: true,
-				maxLength: 2000,
-				minLength: 10
-			},
-			demoSubject: {
-				required: false,
-				maxLength: 64
+				maxlength: 2000,
+				minlength: 10
 			}
 		},
 		// error messages to display to the end user when rules above don't pass
 		message: {
-			demoName: {
+			user_name: {
 				required: "Please enter your name"
 			},
-			demoEmail: {
+			user_mail: {
 				email: "Please enter a valid email address.",
 				required: "Please enter a valid email address."
 			},
-			demoMessage: {
+			user_message: {
 				required: "Please enter a message.",
 				maxlength: "2000 characters max."
-			},
-			demoSubject: {
-				maxLength: "Please enter a valid subject"
 			}
 		},
 		submitHandler: function(form) {
-			$("demo-form").ajaxSubmit({
+			$("#contact-form").ajaxSubmit({
 				type: "POST",
-				url: $("#demo-form").attr("action"),
+				url: $("#contact-form").attr("action"),
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
 					$("#output-area").css("display", "");
@@ -67,7 +60,7 @@ $(document).ready(function(){
 					$("#output-area").html(ajaxOutput);
 					// reset the form if it was successful
 					if($(".alert-success").length >= 1) {
-						$("#my-contact-form")[0].reset();
+						$("#contact-form")[0].reset();
 					}
 				}
 			})

@@ -1,6 +1,6 @@
 {
   "require": {
-    "swiftmailer/swiftmailer": "@stable",
+    "sendgrid/sendgrid": "~7",
     "google/recaptcha": "~1.1"
   }
 }
