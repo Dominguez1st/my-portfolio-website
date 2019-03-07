@@ -9,22 +9,25 @@ position: relative;
 }
 .page {
 	min-height: 100vh;
-	padding: 2em 2em;
-
+	padding: 3.5em 2em;
+	position: relative;
 }
-
+h1{
+	margin-top: 0;
+}
 /***************
 --DESKTOP-NAV--
 ***************/
 nav {
-	background-color: lightgray;
-	margin: 0 2%;
+	background-color: #d4c44f;
+	margin: 0 1.5%;
 	padding: 1em .5em;
 	border-radius:  0 0 .25em .25em;
 	position: fixed;
-	width: 96%;
+	width: 97%;
 	top: 0;
 	box-sizing: border-box;
+	z-index: 2;
 }
 nav a {
 	color: black;
@@ -43,17 +46,33 @@ nav a+a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: AntiqueWhite;
+	background-color: midnightblue;
 }
-.intro-text p {
+
+.intro-text{
+
+	z-index: 1;
+	pointer-events: none;
+	color: white;
 	text-align: center;
+}
+
+
+.particles{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0 -2em;
 }
 
 /***************
 DESKTOP-ABOUT_ME
 ****************/
 .about-me {
-	background-color: linen;
+	background: linear-gradient(to bottom, white, CornflowerBlue);
+
+	/*background-color: darkslateblue;*/
 
 }
 .about-me-container:after{
@@ -75,14 +94,28 @@ DESKTOP-ABOUT_ME
 DESKTOP-PORTFOLIO
 ***************/
 .portfolio{
-	background-color: AntiqueWhite;
+	color: white;
+	background-color: midnightblue;
 }
+.portfolio img, .portfolio video{
+	display: block;
+	margin: auto;
+	width: 80%;
+	height: auto;
+}
+.portfolio .carousel-caption{
+	background: rgba(0,0,0,.3);
+	z-index: 1;
+}
+
 
 /***************
 DESKTOP-CONTACT-ME
 ***************/
 .contact-me{
-	background-color: linen;
+	background: linear-gradient(to bottom, white, CornflowerBlue);
+
+	/*background-color: lightsteelblue;*/
 	min-height: 100vh;
 
 }
@@ -114,7 +147,7 @@ footer{
 
 	}
 	.page{
-		padding: 2em 1em;
+		padding: 3.5em 1em;
 	}
 
 	/***************
@@ -137,6 +170,9 @@ footer{
 	***************/
 	.intro {
 
+	}
+	.particles{
+		margin: 0 -1em;
 	}
 
 	/***************
@@ -164,6 +200,15 @@ footer{
 	***************/
 	.portfolio{
 
+	}
+
+	.portfolio img, .portfolio video{
+		width: 100%;
+		height: auto;
+	}
+
+	.portfolio .carousel-caption{
+		position: static;
 	}
 
 	/***************
