@@ -1,9 +1,6 @@
 .DS_Store
 /.idea
-<<<<<<< HEAD
 .vendor
-**/html/mail-config.php
+my-portfolio/html/mail-config.php
 /Dockerfile
-=======
 .vendor
->>>>>>> Added template .gitignore
