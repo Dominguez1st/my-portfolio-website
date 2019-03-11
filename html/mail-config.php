@@ -12,7 +12,7 @@
  * This file contains sensitive information and should ALWAYS be gitignored!
  **/
 
-//the SendGrid SMTP authorization
+//the SendGrid SMTP authorizationasdgrebg
 $smtpSecret = 'test';
 
 // your Google reCAPTCHA keys here
