@@ -6,4 +6,4 @@ RUN rm -rf *
 COPY . /var/www/
 RUN mv public_html html
 
-EXPOSE 80lsa
+EXPOSE 80
