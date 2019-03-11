@@ -1,6 +1,6 @@
 .DS_Store
 /.idea
 .vendor
-my-portfolio/html/mail-config.php
+my-portfolio-website/html/mail-config.php
 /Dockerfile
 .vendor
