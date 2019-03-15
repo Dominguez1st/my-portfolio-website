@@ -1,5 +1,4 @@
-version: "3"
-
+version: '3'
 services:
    backend:
       build: ./php
@@ -13,7 +12,6 @@ services:
          - ./dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
          - /docker-volumes/etc/letsencrypt/live/r-dominguez.dev/fullchain.pem:/etc/letsencrypt/live/r-dominguez.dev/fullchain.pem
          - /docker-volumes/etc/letsencrypt/live/r-dominguez.dev/privkey.pem:/etc/letsencrypt/live/r-dominguez.dev/privkey.pem
-
       ports:
          - 80:80
          - 443:443

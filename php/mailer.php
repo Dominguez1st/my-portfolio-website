@@ -44,7 +44,7 @@ try {
 	$recipients = $MAIL_RECIPIENTS;
 	$emailObject->addTo($recipients[0], $recipients[1]);
 	// attach the subject line to the message
-	$emailObject->setSubject("hello world");
+	$emailObject->setSubject($subject);
 	/**
 	 * Attach the actual content for the email.
 	 **/
@@ -56,5 +56,5 @@ try {
 	// report a successful send!
 	echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
 } catch(\Exception $exception) {
-	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>ERROR!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
 }

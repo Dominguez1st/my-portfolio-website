@@ -41,19 +41,19 @@ $(document).ready(function() {
 			// error messages to display to the end user when rules above don't pass
 			messages: {
 				demoName: {
-					required: "Y u no add name"
+					required: "Please enter a name"
 				},
 				demoEmail: {
-					email: "y u no use real email",
-					required: "Y u no add email",
+					email: "Please enter a valid email",
+					required: "Please enter a email",
 				},
 				demoMessage: {
-					required: "Y u no add message",
-					maxlength: "Y u no write so much",
-					minlength: "Y you no write so little",
+					required: "Please enter a message",
+					maxlength: "Message character limit 2000",
+					minlength: "Message character minimum 10",
 				},
 				demoSubject: {
-					maxlength: "Y u no write so much",
+					maxlength: "Subject character limit 64",
 				}
 			},
 			submitHandler: function(form) {
