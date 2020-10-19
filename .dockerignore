@@ -3,5 +3,5 @@
 *.md
 /.htaccess
 /.gitignore
-/public_hmtl/documentation
+/public_html/documentation
 /Dockerfile
