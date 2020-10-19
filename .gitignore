@@ -2,5 +2,7 @@
 /.idea
 .vendor
 /php/mail-config.php
-/Dockerfile
-
+.firebaserc
+firebase.json
+.firebase
+/firebase-debug.log
